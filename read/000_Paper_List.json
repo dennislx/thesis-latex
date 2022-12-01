@@ -1,0 +1,52 @@
+{
+    "2203.07094": {
+        "paper_id": "2203.07094",
+        "abs_url": "https://arxiv.org/abs/2203.07094",
+        "pdf_url": "https://arxiv.org/pdf/2203.07094.pdf",
+        "supp_url": null,
+        "src_website": "ArXiv",
+        "download_name": "2203.07094_DialMed_A_Dataset_for_Dialogue-based_Medication_Recommendation.pdf",
+        "title": "DialMed: A Dataset for Dialogue-based Medication Recommendation",
+        "year": null,
+        "paper_venue": null,
+        "authors": [
+            "Zhenfeng He",
+            "Yuqiang Han",
+            "Zhenqiu Ouyang",
+            "Wei Gao",
+            "Hongxu Chen",
+            "Guandong Xu",
+            "Jian Wu"
+        ],
+        "abstract": ".",
+        "comments": "Accepted as a long paper at COLING 2022",
+        "official_code_urls": [
+            "https://github.com/f-window/dialmed",
+            "https://github.com/hhhhhhhzf/dialmed"
+        ],
+        "pwc_page_url": "https://paperswithcode.com/paper/dialmed-a-dataset-for-dialogue-based",
+        "bibtex": "@misc{he2022dialmed,\n      title={DialMed: A Dataset for Dialogue-based Medication Recommendation}, \n      author={Zhenfeng He and Yuqiang Han and Zhenqiu Ouyang and Wei Gao and Hongxu Chen and Guandong Xu and Jian Wu},\n      year={2022},\n      eprint={2203.07094},\n      archivePrefix={arXiv},\n      primaryClass={cs.CL}\n}"
+    },
+    "2110.04943": {
+        "paper_id": "2110.04943",
+        "abs_url": "https://arxiv.org/abs/2110.04943",
+        "pdf_url": "https://arxiv.org/pdf/2110.04943.pdf",
+        "supp_url": null,
+        "src_website": "ArXiv",
+        "download_name": "2110.04943_SCEHR_Supervised_Contrastive_Learning_for_Clinical_Risk_Prediction_using_Electronic_Health_Records.pdf",
+        "title": "SCEHR: Supervised Contrastive Learning for Clinical Risk Prediction using Electronic Health Records",
+        "year": null,
+        "paper_venue": null,
+        "authors": [
+            "Chengxi Zang",
+            "Fei Wang"
+        ],
+        "abstract": "}.",
+        "comments": "",
+        "official_code_urls": [
+            "https://github.com/calvin-zcx/scehr"
+        ],
+        "pwc_page_url": "https://paperswithcode.com/paper/scehr-supervised-contrastive-learning-for",
+        "bibtex": "@misc{zang2021scehr,\n      title={SCEHR: Supervised Contrastive Learning for Clinical Risk Prediction using Electronic Health Records}, \n      author={Chengxi Zang and Fei Wang},\n      year={2021},\n      eprint={2110.04943},\n      archivePrefix={arXiv},\n      primaryClass={cs.LG}\n}"
+    }
+}

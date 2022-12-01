@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: informs2014.bst
+Database file #1: depression_attention.bib
+Database file #2: zotero-refs.bib
+Warning--missing publisher in apa_diagnostic_2013
+You've used 9 entries,
+            2869 wiz_defined-function locations,
+            668 strings with 7028 characters,
+and the built_in function-call counts, 10264 in all, are:
+= -- 1075
+> -- 290
+< -- 2
++ -- 110
+- -- 100
+* -- 794
+:= -- 1244
+add.period$ -- 17
+call.type$ -- 9
+change.case$ -- 81
+chr.to.int$ -- 10
+cite$ -- 10
+duplicate$ -- 1059
+empty$ -- 750
+format.name$ -- 126
+if$ -- 2084
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 99
+newline$ -- 33
+num.names$ -- 36
+pop$ -- 513
+preamble$ -- 1
+purify$ -- 69
+quote$ -- 0
+skip$ -- 148
+stack$ -- 0
+substring$ -- 1126
+swap$ -- 219
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 75
+warning$ -- 1
+while$ -- 66
+width$ -- 0
+write$ -- 115
+(There was 1 warning)

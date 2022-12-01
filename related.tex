@@ -1,0 +1,106 @@
+\section{Related Work} \label{sec:related}
+
+\subsection{Healthcare predictive analytics in IS}\label{sec:related:one}
+
+Healthcare predictive analytics examine patient data and make diagnostic or prognostic risk predictions~\citep{shmueli_predictive_2011}\red{TODO: not found,  Van Calster et al., 2019}. It is an important research area in IS~\citep{shmueli_predictive_2011} since the results of this research area have a wide range of important applications, such as identifying patients at risk~\red{TODO: Bardhan et al., 2015 not found; Lin et al., 2017 not found}, supporting clinical decision-making~\citep{ben-assuli_trajectories_2020}, and dealing with hospital administrative challenges~\citep{meyer_machine_2014}. Our study is within the domain of healthcare predictive analytics in IS: we seek to address the difficulties of accurate depression detection on social media platforms. 
+
+Digital traces as a novel data source has significant potential and implications for addressing socio-technical concerns. Google is among the first organizations to conduct groundbreaking research using digital trace data (i.e., search queries from regions with a huge number of web search users) to detect influenza epidemics~\citep{ginsberg_detecting_2009}. Soon, leveraging digital trace data becomes an  emerging and vital research avenue in IS~\red{TODO: not found Agarwal et al., 2008; Hedman et al., 2013}. IS healthcare analytics researchers have used digital trace data to generate new data science artifacts to address healthcare challenges. For example,~\cite{wenli_zhang_comprehensive_2020} extract digital traces from social media, environmental sensors, and healthcare records to identify asthma risk factors. \red{TODO: not found Xie et al, 2022} retrieve patients' health digital traces to predict hospital readmissions. While academics have suggested that unique digital trace data combined with domain knowledge and appropriate analysis techniques can serve as the foundation for a ``21st-century science"~\red{TODO: not found Hedman et al., 2013; Watts, 2007}, they have also pointed out that IS researchers need new skills and tools to leverage digital trace data and exploit them effectively\red{TODO: not found Hedman et al., 2013}. Our work aligns with this research direction: we intend to design a new artifact that elevates medical knowledge to decipher digital trace data and identify patients at risk of clinic depression. 
+
+
+\subsection{Depression detection using digital traces on social media}\label{sec:related:two}
+
+Social media is normally defined as an Internet-based platform (e.g., Twitter). Social media has been extensively studied by IS and is seen as having tremendous potential in various IS regimes~\red{cite recent ISR misq social media based papers}. According to the uses and gratifications theory, the gratifications of using social media include expression of opinion, social interaction, information sharing or seeking, etc~\citep{whiting_why_2013}. Applying the network externalities and motivation theory,~\red{TODO: not found Lin \& Lu, 2011} show that enjoyment, peers, and usefulness explain why people continue to use social media. Especially, depressed patients are motivated to share their symptoms, treatments, and the self-believed causes of depression for offering or seeking support and fighting the stigma of mental illness, see~\ref{fig:Coopersmith}. Researchers who use social media for depression analyses mainly focus on two categories of studies: (1) the correlations between the use of social media sites and mental illness~\red{TODO: not found Aalbers et al., 2019; Keles et al., 2020}, and (2) using social media data for mental disorder detection~\citep{guntuku_detecting_2017}. Our work focuses on the latter aspect. 
+
+\begin{figure}[h]
+    \centering
+    \noindent\includegraphics[width=0.6\textwidth]{imgs/Sample-Figure.pdf} 
+    \caption{Todo: motivation: a synthetic example . search webmed, reddit, Twitter typical texts~\citep{coppersmith_adhd_2015,coppersmith_clpsych_2015}\red{is this a table or figure?}}
+    \label{fig:Coopersmith}
+\end{figure}
+
+\begin{table}[h]
+\centering
+\caption{ Todo: motivation: a synthetic example. search webmed, reddit, Twitter typical texts }
+\label{tb:Coopersmith}
+\small
+\begin{threeparttable}
+    \begin{tabular}{L{80pt}C{100pt}C{100pt}C{100pt}}
+    \toprule
+    % \midrule
+    Social media platforms    & Reddit & Twitter & WebMed \\ \midrule
+    Social media users disclose depression-related symptoms, treatments, and causes.   & to fill  & to fill &  to fill \\
+    \bottomrule
+    \end{tabular}
+\end{threeparttable}
+\end{table}
+
+As we mentioned, the majority of existing studies use sentiment analysis and lexicon-based features for depression detection~(see Table~\ref{tb:Michael}). For example, \red{TODO: not found Michael et al, 2020} conduct LIWC and sentimental analyses, followed by rule-based classification for finding people with emotional distress. Although practicable, there is a significant discrepancy between the features used in these studies and medical practitioners' criteria in depression detection. Most people experience low sentiments occasionally and certain individuals tend to favor specific words depending on their education level, the influence of peers, and social context. Sentiment analysis and lexicon-based features may provide insights to one's psychological states, but they do not specify clinical depression. 
+
+\begin{table}[h]
+\centering
+\caption{Title here: table from the review paper; ICIS R2; Micael'}
+\label{tb:Michael}
+\small
+\begin{threeparttable}
+    \begin{tabular}{lL{100pt}L{150pt}L{75pt}L{15pt}} \toprule
+    Study & Model & Novelty & Input &  TP\\ \midrule
+    \red{paper one} & ProtoPNet & Prototype for image classification & An image &  No\\
+    \red{paper two}& HPNet & Hierarchical prototype & An image &  No\\
+    \red{paper three}& ProSeNet & Prototype for text classification & A piece of text & No \\
+    
+    Our Method& TempPNet & Capture temporal progression of the input & A sequence of walking tests & 
+    % \checkmark
+    Yes \\ \bottomrule
+    \end{tabular}
+\end{threeparttable}
+\end{table}
+
+A few prior studies consider entities in social media data that can characterize clinical depression. One of the first studies is by~\cite{coppersmith_measuring_2014,coppersmith_quantifying_2014}, in which the authors identify social media users' behavioral patterns, including social engagement and exercises. Similarly, \cite{choudhury_predicting_2013} examine social media users' behavior attributes, such as engagement in social media, the change in the egocentric social networks, emotional states, and depression-related topics. Although interesting and promising, the attributes used in these two studies still considerably differ from the medical definition of depression. As we know, depression has received concerted attention from many practitioners and researchers. There is established medical knowledge in depression detection and diagnosis, such as~\red{cite depression Scales cesd phq9 bdi} Our first research question (R1) is \textit{how to leverage medical domain knowledge for social media users' depression detection}. 
+
+In 2020, \cite{hussain_exploring_2020} push this research area forward by proposing depression marker taggers to identify depression-related symptoms and drug-use experiences. This work is the closest to ours in motivation. However, this work and other existing studies use predetermined dictionaries and hand-crafted features, which limit their methods to find novel (e.g., model's unseen features), yet significant features for depression detection. Hence, we are motivated to automatically extract entities in social media posts directly related to clinic depression diagnoses, including depression symptoms, life events that may cause or exacerbate depression, and depression treatments~\citep{beck_depression_2014}. Our second research question (R2) is \textit{how to effectively extract depression diagnosis-related entities}.
+
+Furthermore, depressed patients have depressive episodes, which are periods characterized by low mood and other depression symptoms that last for two weeks or more~\citep{beck_depression_2014}. Depressive episodes may occur from time to time. The existing methods do not capture the irregular time intervals of social media users' life patterns and behaviors. In the meantime, according to medical domain knowledge, different depressive symptoms indicate varying degrees of severity; different risk factors have different effects on the onset and exacerbation of depression. Such medical knowledge has not been taken into account by the previous approaches. Our third research question (R3) is \textit{how to incorporate knowledge (i.e., recency and relevancy to the onset of depression) associated with depression diagnosis-related entities for depression detection}.
+
+\subsection{Knowledge-driven machine learning}\label{sec:related:three}
+
+The last two decades have seen a dramatic rise in the applications of deep and complicated models with large-scale data, leading to the imprecise, even misleading, perception that the vast amount of valuable human knowledge acquired to date no longer matters. However, researchers in various fields have demonstrated that knowledge-driven machine learning, in which domain expertise or domain knowledge is explicitly and meaningfully incorporated in the design of machine learning models, can play an important role in many applications involving difficult learning tasks and limited training resources due to knowledge-driven machine learning models have clear advantages in streamlining model architectures, lowering training costs, and increasing model interpretability~\citep{hussain_exploring_2020}~\red{TODO: not found Rudin, 2022, Li, 2020}
+
+In IS, knowledge-driven machine learning is starting to get more attention and has been used to design novel domain-dadapted machine learning artifacts. For example, \cite{yang_getting_2022} employ psycholinguistics theories to construct a framework that combines domain-adapted NLP artifacts with deep learning models to predict the individuals' personalities. 
+
+In healthcare, the heterogeneity of patient cohorts, the complexity of medical knowledge, and the high needs for interpretability contribute to the complexity of healthcare-related learning tasks, where knowledge-driven machine learning can have enormous potentials~\red{TODO: not found Li, 2020}.
+
+\red{our work xxx }.
+
+\subsection{Knowledge-driven machine learning}\label{sec:related:four}
+
+\subsubsection{Depression ontology (R1)}\label{sec:related:four:r1}
+
+Ontology is the science of what is, including the types and structures of objects, properties, events, processes, and relationships~\citep{smith_ontology_2012}. Ontology is widely used in computer and information science to provide a standard vocabulary for researchers that need to share information. It provides machine-interpretable definitions of fundamental concepts of the domain and relations between the concepts~\red{not found: Musen, 2015}. 
+
+In medical expert systems, ontology has been used to represent medical domain knowledge for disease diagnosis~\citep{zheng_ontology-based_2008}\red{not found: Arsene et al., 2011}. Additionally, uncertainty is widely acknowledged in medical expert systems. The Bayesian network and ontology have been utilized to describe clinical practice uncertainty for better decision-making~\citep{zheng_ontology-based_2008}. For depression detection, ontology-based approaches have been used to represent depression diagnosis terminologies~\citep{chang_depression_2013}\red{not found: Jung et al., 2017}. 
+
+To address our first research question \textendash~leveraging medical domain knowledge for social media users' depression detection, we construct a depression ontology model that explicitly explains the terminologies used in depression diagnosis and treatments. We also incorporate the prevalence of these terminologies among depression patients into the ontology inference rule using the Bayesian network.
+
+\subsubsection{Depression diagnosis-related entity identification (R2)}\label{sec:related:four:r2}
+
+Named entity recognition (NER) is a well-suited approach to address the second research question \textendash~extracting depression diagnosis-related entities including depression symptoms, major life events, and depression treatments. NER is the task of identifying entities such as people, location, organization, drug, medical notions, etc~\citep{nadeau_survey_2007}.  NER is an essential step in most natural language processing tasks such as question answering, information retrieval, coreference resolution, and topic modeling, among others. Handcrafted rules, lexicons, orthographic features, and ontologies are used in early NER systems followed by feature engineering and machine learning techniques~\citep{nadeau_survey_2007}. Later, deep learning-based NER systems with minimal feature engineering grow in popularity. Such deep learning-based models are useful because they often do not require domain-specific resources (e.g., lexicons), making them more domain-independent~\citep{yadav_survey_2019}.
+
+In this study, we adapt the state-of-the-art NER algorithm to identify the depression diagnosis-related entities in social media posts. According to the medical literature, the clinical diagnosis of depression is normally based on the chief complaint presented by depressed patients, including (1) symptoms, such as anxiety, fatigue, low mood, reduced self-esteem, change in appetite or sleep, suicide attempt, etc~\citep{apa_diagnostic_2013}; (2) major life event changes, such as divorce, body shape, violence, abuse, drug or alcohol use, and so on. We, therefore, use NER to discover depression symptoms and life events that may cause or exacerbate depression~\citep{beck_depression_2014}. Meanwhile, the mainstay of depression treatment is usually medication, therapy, or a combination of these two~\citep{mitchell_understanding_2008}. We also perform NER to locate antidepressants and depression therapies because they indicate the ongoing experience of depression. 
+
+\subsubsection{Knowledge-aware LSTM for Depression Detection (R3)}\label{sec:related:four:r3}
+
+\red{from Xie: If you want to use the ``knowledge-driven" concept, can we just call our method medical knowledge-driven LSTM? such medical knowledge includes time and medical ontology. I just feel it is weird to single out the ``time" concept, since we never emphasized it before. Time can be just another knowledge, because there are already many medical studies using time as additional knowledge for disease prediction Baytas et al. 2017, etc.}
+
+Simulating the accumulation of recent/earlier and important/trivial (knowledge-driven) life events; and their impact on the development of depression. Such as depression diagnosis-related entities in this study, recurrent neural networks (RNN) are well-established approaches. An RNN is a deep learning method in which the hidden units are connected in a directed cycle, allowing the network to store past hidden states of information in the internal memory~\red{Bengio et al., 1994}. Long Short-Term Memory (LSTM) is a popular variant of RNN that has a gated structure to handle long-term dependencies~\red{Hochreiter \& Schmidhuber, 1997}. This study uses depression diagnosis-related entities as the inputs for depression detection. 
+
+The recency and frequency of the depression diagnosis-related entities are important for depression detection. First, the occurrences of recent major life event changes are reported by the majority of patients with severe depression~\red{Heikkinen et al., 1994}. Second, LSTM assumes that there is a consistent consecutive property among the input elements, which does not hold in depression diagnosis-related entities for two reasons. (1) The frequency and the number of depression diagnosis-related entities that can be identified in social media data are variable and unstructured because of the irregularity of depressive episodes. (2) Missing information is common in the longitudinal social media data because social media users may not necessarily report their depression diagnosis-related symptoms, life events, and treatments. 
+
+The relevancy of the depression diagnosis-related entities is also vital in detecting depression. According to medical domain knowledge~\red{APA, 2013}, different entities have varying relevance to depression diagnosis. For example, the entities we can identify on social media may be negative sentiments that do not necessarily indicate depression, because everyone can feel depressed, sad, or blue at some point in their lives. Entities like recurrent thoughts of death and excessive or inappropriate guilt, on the other hand, are strong indicators of depression. Depression diagnosis-related entities may also have varying effects on the onset and progression of depression. For example, traumatic events or major life changes can often trigger depression. Such knowledge (i.e., the relevancy of entities to depression) can be represented in the Bayesian network-based depression ontology. Nonetheless, the terminologies used in the depression ontology (i.e., medical terms) differ significantly from the entities identified on social media (i.e., informal language). We further apply the ontology alignment technique\red{Chu et al., 2020} to match the entities from social media and diagnosis terminologies in depression ontology.
+
+Based on the assumption that more recent and relevant entities are more important in depression detection, we propose the time-and-knowledge-aware LSTM method to address our third research question \textendash characterizing the temporal and relevance information of depression diagnosis-related entities for depression detection.
+
+\red{from Xie: i am still debating whether this is necessary in the lit review. But it depends on the length of the lit review. If it's too long, we can move it to the result section. before we show the attention results, just briefly explain what it is and what it can do}
+
+\subsubsection{Summarization}\label{sec:related:four:summary}
+
+todo

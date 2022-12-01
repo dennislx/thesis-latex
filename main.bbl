@@ -1,0 +1,63 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem[{Almqvist et~al.(2008)Almqvist, Worm, Leynaert, \protect\BIBand{} {for
+  the working group of GA2LEN WP 2.5 ‘Gender’}}]{almqvist_impact_2008}
+Almqvist C, Worm M, Leynaert B, {for the working group of GA2LEN WP 25
+  ‘Gender’} (2008) Impact of gender on asthma in childhood and adolescence:
+  a {GA2LEN} review. \emph{Allergy} 63(1):47--57, ISSN 1398-9995,
+  \urlprefix\url{http://dx.doi.org/10.1111/j.1398-9995.2007.01524.x}.
+
+\bibitem[{APA(2013)}]{apa_diagnostic_2013}
+APA APA (2013) \emph{The {Diagnostic} and {Statistical} {Manual} of {Mental}
+  {Disorders}}. 5 edition, ISBN 978-0-89042-578-7,
+  \urlprefix\url{https://doi.org/10.1176/appi.books.9780890425787}.
+
+\bibitem[{Beck \protect\BIBand{} Alford(2014)}]{beck_depression_2014}
+Beck MDAT, Alford PDBA (2014) \emph{Depression: {Causes} and treatment,}
+  (University of Pennsylvania Press), ISBN 978-0-8122-9088-2,
+  \urlprefix\url{https://www.degruyter.com/document/doi/10.9783/9780812290882/html},
+  publication Title: Depression.
+
+\bibitem[{Devlin et~al.(2018)Devlin, Chang, Lee, \protect\BIBand{}
+  Toutanova}]{devlin_bert_2018}
+Devlin J, Chang MW, Lee K, Toutanova K (2018) {BERT}: {Pre}-training of {Deep}
+  {Bidirectional} {Transformers} for {Language} {Understanding}.
+  \emph{arXiv:1810.04805 [cs]} \urlprefix\url{http://arxiv.org/abs/1810.04805},
+  arXiv: 1810.04805.
+
+\bibitem[{Dyer et~al.(2015)Dyer, Ballesteros, Ling, Matthews, \protect\BIBand{}
+  Smith}]{dyer_transition-based_2015}
+Dyer C, Ballesteros M, Ling W, Matthews A, Smith NA (2015) Transition-{Based}
+  {Dependency} {Parsing} with {Stack} {Long} {Short}-{Term} {Memory}.
+  \emph{arXiv:1505.08075 [cs]} \urlprefix\url{http://arxiv.org/abs/1505.08075},
+  arXiv: 1505.08075.
+
+\bibitem[{Heikkinen et~al.(1994)Heikkinen, Aro, \protect\BIBand{}
+  Lönnqvist}]{heikkinen_recent_1994}
+Heikkinen M, Aro H, Lönnqvist J (1994) Recent life events, social support and
+  suicide. \emph{Acta Psychiatrica Scandinavica. Supplementum} 377:65--72, ISSN
+  0065-1591,
+  \urlprefix\url{http://dx.doi.org/10.1111/j.1600-0447.1994.tb05805.x}.
+
+\bibitem[{Lample et~al.(2016)Lample, Ballesteros, Subramanian, Kawakami,
+  \protect\BIBand{} Dyer}]{lample_neural_2016}
+Lample G, Ballesteros M, Subramanian S, Kawakami K, Dyer C (2016) Neural
+  {Architectures} for {Named} {Entity} {Recognition}. \emph{arXiv:1603.01360
+  [cs]} \urlprefix\url{http://arxiv.org/abs/1603.01360}, arXiv: 1603.01360.
+
+\bibitem[{Xie et~al.(2021)Xie, Zhang, Ma, Zeng, \protect\BIBand{}
+  Lo-Ciganic}]{xie_readmission_2021}
+Xie J, Zhang B, Ma J, Zeng D, Lo-Ciganic J (2021) Readmission {Prediction} for
+  {Patients} with {Heterogeneous} {Medical} {History}: {A} {Trajectory}-{Based}
+  {Deep} {Learning} {Approach}. \emph{ACM Transactions on Management
+  Information Systems} 13(2):14:1--14:27, ISSN 2158-656X,
+  \urlprefix\url{http://dx.doi.org/10.1145/3468780}.
+
+\bibitem[{Xie et~al.(2022)Xie, Zhao, Liu, \protect\BIBand{} Fang}]{xie2022care}
+Xie J, Zhao X, Liu X, Fang X (2022) Care for the mind amid chronic diseases: An
+  interpretable ai approach using iot. \emph{arXiv preprint arXiv:2211.04509} .
+
+\end{thebibliography}
