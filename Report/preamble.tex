@@ -1,0 +1,67 @@
+
+
+% To handle english transcripts
+\usepackage[english]{babel}
+\usepackage[font=small,labelfont=bf]{caption}
+
+% Used for modifying page layout
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+% For referencing contents,figure,table...
+\usepackage[hidelinks]{hyperref}
+
+% To use references
+\usepackage{csquotes}
+\usepackage{caption}
+\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
+
+
+% For using text colors
+\usepackage{color}
+\definecolor{darkgray}{RGB}{0.40, 0.40, 0.40}
+\definecolor{redross}{RGB}{230, 0, 0}
+\definecolor{therablue}{RGB}{41, 134, 230}
+
+% For including source code
+\usepackage{listings}
+%define Javascript language
+\lstdefinelanguage{JavaScript}{
+    keywords={do, if, in, for, let, new, try, var, case, else, enum, eval, null, this, true, void, with, await, break, catch, class, const, false, super, throw, while, yield, delete, export, import, public, return, static, switch, typeof, default, extends, finally, package, private, continue, debugger, function, arguments, interface, protected, implements, instanceof},
+    ndkeywords={class, export, boolean, throw, implements, import, this},
+    sensitive=false,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]',
+    morestring=[b]''
+}
+\lstset{
+    basicstyle=\fontsize{10}{10}\selectfont\ttfamily,
+    keywordstyle=\color{therablue}\bfseries,
+    ndkeywordstyle=\color{redross}\bfseries,
+    numberstyle=\tiny\color{darkgray},
+    commentstyle=\color{darkgray}\ttfamily,
+    identifierstyle=\color{darkgray},
+    inputpath=./code/,
+    breakatwhitespace=false,
+    breaklines=true,
+    extendedchars=true,
+    keepspaces=true,
+    language=JavaScript,
+    numbers=left,
+    numbersep=10pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    stringstyle=\color{darkgray},
+    tabsize=2,
+    title=\lstname{}
+}
+
+% To use math symbols
+\usepackage{unicode-math}
+
+% To float images
+\usepackage{float}
+
+% To format URLs
+\usepackage{url}

@@ -1,0 +1,49 @@
+\documentclass[12pt,a4paper,oneside]{memoir}
+\input{math}
+\input{preamble}
+
+\usepackage{graphicx}
+\graphicspath{{./asset/}{Report//asset/}}
+\sloppy
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+
+\addbibresource{report.bib}
+\DefineBibliographyStrings{english}{bibliography = {References}}
+\nocite{*} % all entries in bib file are included regardless of whether they are cited
+
+
+
+\begin{document}
+
+\newlength{\toptafiddle}
+\newlength{\bottafiddle}
+\setlength{\oddsidemargin}{0.25in} % Left side margin {1in by default + 0.25in}
+\setlength{\headheight}{2\onelineskip}
+\setlength{\topmargin}{-0.5in}
+\setlength{\footskip}{2\onelineskip}
+\setlength{\footnotesep}{\onelineskip}
+% A4 paper height = 11.69in --> thus 11.69in - 9.67in - 1in (top + header) is approx 0.75in left for bottom
+\setlength{\textheight}{9.67in}
+\brokenpenalty=10000
+\OnehalfSpacing{}
+\pagenumbering{roman}
+\pagestyle{plain}
+
+\pagestyle{myheadings}
+\makeheadrule{myheadings}{\textwidth}{1pt}
+\makefootrule{myheadings}{\textwidth}{1pt}{\footruleskip}
+\makeoddhead{myheadings}{\small{Title \- my title here}}{}{\small{Chapter \thechapter}}
+\makeoddfoot{myheadings}{\scriptsize{Financial Service\&Analytics,  Alfred Lerner, UDelaware}}{}{\small{\thepage}}
+\pagenumbering{arabic}
+
+\include{page/intro}
+\include{page/problem}
+\include{page/background}
+\include{page/design}
+\include{page/result}
+\include{page/appendix}
+
+\printbibliography[heading=bibintoc]
+
+\end{document}

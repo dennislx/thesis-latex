@@ -1,0 +1,26 @@
+% chktex-file 44
+
+\chapter{Experimentation \& Results}
+
+% \pagebreak
+
+\section{Responses}
+
+
+\begin{center}
+    \begin{tabular}{ |c|c|c| } 
+        \hline
+        Number of Epochs & Loss Incurred & Accuracy \\ [0.5ex]
+        \hline\hline
+        500 & 0.23467 & 0.9614 \\
+        1000 & 0.08742 & 0.9802 \\
+        1500 & 0.08140 & 0.9740 \\
+        2000 & 0.15286 & 0.9686 \\
+        2250 & 0.20507 & 0.9544 \\
+        2456(~2500) & 0.27993 & 0.9525 \\
+        \hline
+    \end{tabular}
+    \captionof{table}{Number of Epochs vs. Accuracy}~\label{tbl:nicetablelesstable}
+\end{center}
+
+The outcome (see table~\ref{tbl:nicetablelesstable}) any DNN model is two things. First, it should return the desired response precisely. Second, the loss at each iteration during training must be optimized. From the above table, it is evident that by increasing the batch size the losses are reduced.
